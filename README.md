@@ -1,7 +1,38 @@
 # Terraformprojects
 These are all notes for tutorials, workshops, projects I have completed using Terraform
 
-# Importing existing infrastructue resources into terraform
+# TF Project_1: Creating an EC2 instance with Terraform (TF)
+
+Using the tutorial: 
+
+## Why
+I am learning how to use TF to create infrastructure. I understand it is a valuable IaC tool to be able to use, so I am working on developing this skill. 
+
+## Things to remember 
+
+- Verifying credentials `aws configure list`
+
+- Data blocks are used to query your cloud provider for info about other resources. In this data block, it's fetching the latest AWS AMI matching the filter so hardcoding the AMI ID in the configuration isn't necessary.
+
+- Data sources `data` have an ID used to reference data attributes within your configuration. Format `"block type" "name`
+
+- When I configure the IAM credentials to authenticate the TF AWS provider, I have to set the `AWS_ACCESS_KEY` `AWS_SECRET_ACCESS_KEY` and `AWS_SESSION_TOKEN` environmental variables 
+
+- resource block `resource` = defines components of the infrastructure. 
+>> First line = `"resource type" "resource name"`
+>> Resource address `"resource_type.resource_name
+
+- To initialize your workspace `terraform init`
+
+- To validate configuration `terraform validate`
+
+- To create the infrastructure `terraform apply`, review, and then when prompted enter `yes`.
+
+- After TF apply, there is file created called terraform.tfstate. To check and subsequently manage the resources and data sources stored about your infrastructure `terraform state list` To do list, use s3 for a remote state backend..
+
+- To print the entire state `terraform show`
+
+# Importing existing infrastructue resources into Terraform
 Terraform CLI tools
   terraform import (the following are the arguments the tool uses)
     ADDR – the address of the resource in terraform (e.g. aws_instance.instance_name)
