@@ -3,7 +3,7 @@ These are all notes for tutorials, workshops, projects I have completed using Te
 
 # TF Project_1: Creating an EC2 instance with Terraform (TF)
 
-Using the tutorial: 
+Using the tutorial: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/aws-create
 
 ## Why
 I am learning how to use TF to create infrastructure. I understand it is a valuable IaC tool to be able to use, so I am working on developing this skill. 
