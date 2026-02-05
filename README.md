@@ -1,5 +1,5 @@
 # Terraformprojects
-These are all notes for tutorials and projects I have completed using Terraform.
+Tutorials and projects using Terraform.
 
 ## Project_1: Creating an EC2 instance with Terraform (TF)
 
