@@ -91,8 +91,7 @@ ID – the resource ID in the cloud provider/k8s/database service/vcs service/et
 Example: `terraform import aws_instance.instance_name my_role`
 
 ### Troubleshooting
-When I ran `terraform init` initially, I got an error message. I had to run `terraform init -upgrade` to allow selection of new versions
-Remember to put keys in the path before running the command. 
+When I ran `terraform init` initially, I got an error message. I had to run `terraform init -upgrade` to allow selection of new versions. Remember to put keys in the path before running the command. 
 
 
 
